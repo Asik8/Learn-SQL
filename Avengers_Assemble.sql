@@ -73,5 +73,28 @@ DESCRIBE avengers;
 SELECT * FROM avengers ORDER BY age ASC;
 SELECT * FROM avengers ORDER BY age DESC;
 
+-- see first 3 persons info
+SELECT * FROM avengers LIMIT 3;
+
+-- DELETE INFO FROM A TABLE
+DELETE FROM avengers WHERE id=11;
+
+-- greater than or less than
+SELECT * FROM avengers WHERE age>30;
+SELECT * FROM avengers WHERE age<=35 ORDER BY age;
+
 -- add another column on a extsting table
-ALTER 
+ALTER TABLE avengers ADD favourite_coffee VARCHAR(50);
+
+-- adding coffee for every avengers
+UPDATE avengers SET favourite_coffee = 'Latte' WHERE id = 1;   -- Thor
+UPDATE avengers SET favourite_coffee = 'Espresso' WHERE id = 2; -- Tony
+UPDATE avengers SET favourite_coffee = 'Americano' WHERE id = 3; -- Steve
+UPDATE avengers SET favourite_coffee = 'Cold Brew' WHERE id = 4; -- Bruce
+UPDATE avengers SET favourite_coffee = 'Cappuccino' WHERE id = 5; -- Natasha
+UPDATE avengers SET favourite_coffee = 'Flat White' WHERE id = 6; -- Clint
+UPDATE avengers SET favourite_coffee = 'Mocha' WHERE id = 7; -- Wanda
+UPDATE avengers SET favourite_coffee = 'Herbal Coffee' WHERE id = 8; -- Vision
+UPDATE avengers SET favourite_coffee = 'Iced Coffee' WHERE id = 9; -- Peter
+UPDATE avengers SET favourite_coffee = 'Macchiato' WHERE id = 10; -- Sam
+SELECT * FROM avengers;
