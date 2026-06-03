@@ -18,22 +18,24 @@ CREATE TABLE avengers(
 
 -- inserting data into avengers
 	-- syntext-1:
-    INSERT INTO avengers (id,first_name,last_name,origin,age,super_name) 
-    VALUES (1, 'THOR','ODINSON','ASGARD',1500,'GOD OF THUNDER');     -- here we can apply anyorder entry in the data table
+				INSERT INTO avengers (id,first_name,last_name,origin,age,super_name) 
+				VALUES (1, 'THOR','ODINSON','ASGARD',1500,'GOD OF THUNDER');     -- here we can apply anyorder entry in the data table
     -- syntext-2:
-    INSERT INTO avengers VALUES (2,'TONY','START','EARTH',35,'IRON MAN'); 	-- here you have to follow the exact sequence by using which the table created
+				INSERT INTO avengers VALUES (2,'TONY','START','EARTH',35,'IRON MAN'); 	-- here you have to follow the exact sequence by using which the table created
     -- systext-3:
-    INSERT INTO avengers
-	VALUES
-	(3, 'Steve', 'Rogers', 'Earth', 106, 'Captain America'),
-	(4, 'Bruce', 'Banner', 'Earth', 49, 'Hulk'),
-	(5, 'Natasha', 'Romanoff', 'Earth', 39, 'Black Widow'),
-	(6, 'Clint', 'Barton', 'Earth', 45, 'Hawkeye'),
-	(7, 'Wanda', 'Maximoff', 'Earth', 30, 'Scarlet Witch'),
-	(8, 'Vision', '', 'Earth', 5, 'Vision'),
-	(9, 'Peter', 'Parker', 'Earth', 18, 'Spider-Man'),
-	(10, 'Sam', 'Wilson', 'Earth', 42, 'Falcon'),
-	(11, 'Scott', 'Lang', 'Earth', 44, 'Ant-Man');   -- insert multiple values in the table together
+				INSERT INTO avengers
+				VALUES
+				(3, 'Steve', 'Rogers', 'Earth', 106, 'Captain America'),
+				(4, 'Bruce', 'Banner', 'Earth', 49, 'Hulk'),
+				(5, 'Natasha', 'Romanoff', 'Earth', 39, 'Black Widow'),
+				(6, 'Clint', 'Barton', 'Earth', 45, 'Hawkeye'),
+				(7, 'Wanda', 'Maximoff', 'Earth', 30, 'Scarlet Witch'),
+				(8, 'Vision', '', 'Earth', 5, 'Vision'),
+				(9, 'Peter', 'Parker', 'Earth', 18, 'Spider-Man'),
+				(10, 'Sam', 'Wilson', 'Earth', 42, 'Falcon'),
+				(11, 'Scott', 'Lang', 'Earth', 44, 'Ant-Man');   -- insert multiple values in the table together
     
 -- see the whole table
 SELECT * FROM avengers;
+
+C
