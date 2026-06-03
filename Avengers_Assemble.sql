@@ -57,3 +57,21 @@ INSERT INTO coffee_table VALUES
 
 -- SHOW coffee_table 
 SELECT * FROM coffee_table;
+
+-- SELECT details of any row
+SELECT * FROM avengers where id=2;
+
+-- perform update on a particular column in a table
+UPDATE avengers SET last_name='STARK' WHERE id=2;
+SELECT id FROM avengers where first_name LIKE '%Vision%';
+UPDATE avengers SET last_name=NULL WHERE id=8;
+
+-- get description of a table 
+DESCRIBE avengers;
+
+-- Order by 
+SELECT * FROM avengers ORDER BY age ASC;
+SELECT * FROM avengers ORDER BY age DESC;
+
+-- add another column on a extsting table
+ALTER 
