@@ -38,4 +38,22 @@ CREATE TABLE avengers(
 -- see the whole table
 SELECT * FROM avengers;
 
-C
+-- Create another table
+CREATE TABLE coffee_table(
+	id INT PRIMARY KEY,
+    name VARCHAR(50),
+    region VARCHAR(50),
+    roast VARCHAR(50)
+);
+
+-- inserting data in coffee_table 
+INSERT INTO coffee_table VALUES
+(1, 'default route', 'ethiopia', 'light'),
+(2, 'docker run', 'mexico', 'medium'),
+(3, 'helpdesk', 'honduras', 'medium'),
+(4, 'on-call', 'peru', 'dark'),
+(5, 'ifconfig', 'tanzania', 'blonde'),
+(6, 'traceroute', 'bali', 'med-dark');
+
+-- SHOW coffee_table 
+SELECT * FROM coffee_table;
