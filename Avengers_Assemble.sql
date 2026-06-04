@@ -97,4 +97,19 @@ UPDATE avengers SET favourite_coffee = 'Mocha' WHERE id = 7; -- Wanda
 UPDATE avengers SET favourite_coffee = 'Herbal Coffee' WHERE id = 8; -- Vision
 UPDATE avengers SET favourite_coffee = 'Iced Coffee' WHERE id = 9; -- Peter
 UPDATE avengers SET favourite_coffee = 'Macchiato' WHERE id = 10; -- Sam
+
+-- find unique valures of a column
+SELECT DISTINCT origin FROM avengers;
+
+-- find names like the finst letters and the according to the last latter
+SELECT * FROM avengers WHERE first_name like 'T%';  -- find the persons in where the first letter is table
+SELECT * FROM avengers WHERE last_name like '%r';  -- finding the persond whoms last name finish with r
+
+-- view multiple columns from a table
+SELECT fiRst_name, last_name FROM avengers;
+
+-- use between in avengers
+SELECT * FROM avengers WHERE age BETWEEN 30 AND 60;
+
+-- 
 SELECT * FROM avengers;
